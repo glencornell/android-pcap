@@ -21,6 +21,7 @@
     <string name="popup_size_250">250 MB</string>
     <string name="popup_size_1g">1 GB</string>
     <string name="popup_size_unlimited">No Limit</string>
+    <string name="icon_of_usb_device">icon of usb device</string>
 
     <color name="sidebar">#505050</color>
 

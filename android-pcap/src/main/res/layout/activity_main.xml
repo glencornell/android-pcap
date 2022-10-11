@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
+    android:id="@+id/LinearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="start"
@@ -11,19 +11,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="start"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TableLayout
             android:id="@+id/tableLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top" >
+            android:layout_gravity="top">
 
             <TableRow
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp" >
+                android:layout_marginBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView1"
@@ -31,6 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="15dp"
+                    android:contentDescription="@string/icon_of_usb_device"
                     android:src="@drawable/ic_action_usbsymbol" />
 
                 <LinearLayout
@@ -38,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textDashUsbDevice"
@@ -65,20 +66,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="?android:attr/selectableItemBackground"
-                android:clickable="true" >
+                android:clickable="true"
+                android:minHeight="48dp">
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dp"
+                    android:contentDescription="icon of channel hopping"
                     android:src="@drawable/ic_action_chanhop" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textChannelHop"
@@ -112,7 +115,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="?android:attr/selectableItemBackground"
-                android:clickable="true" >
+                android:clickable="true"
+                android:minHeight="48dp">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -120,13 +124,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="15dp"
+                    android:contentDescription="icon of file manager"
                     android:src="@android:drawable/stat_notify_sdcard" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textDashFile"
@@ -153,14 +158,14 @@
                     android:visibility="invisible" />
 
             </TableRow>
-            
+
             <TableRow
                 android:id="@+id/tableRowHardware"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginTop="20dp"
-                android:visibility="gone" >
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/imageViewHardware"
@@ -186,7 +191,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
         </LinearLayout>
 
@@ -194,7 +199,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginBottom="15dp" >
+            android:layout_marginBottom="15dp">
 
             <TableRow
                 android:id="@+id/tableRowManage"
@@ -202,7 +207,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="?android:attr/selectableItemBackground"
-                android:clickable="true" >
+                android:clickable="true"
+                android:minHeight="48dp">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -210,13 +216,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="14dp"
+                    android:contentDescription="icon of manage logs"
                     android:src="@drawable/device_storage" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textManage"
@@ -245,13 +252,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="?android:attr/selectableItemBackground"
-                android:clickable="true" >
+                android:clickable="true"
+                android:minHeight="48dp">
 
                 <ImageView
                     android:id="@+id/imageDashLogControl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dp"
+                    android:contentDescription="icon of start logging"
                     android:src="@drawable/ic_action_record" />
 
                 <TextView
@@ -265,5 +274,4 @@
 
         </TableLayout>
     </LinearLayout>
-
 </RelativeLayout>
